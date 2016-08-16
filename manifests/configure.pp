@@ -1,6 +1,6 @@
 # Configure class for Hadoop Datanode
 
-class configure {
+class datanode::configure {
 	
 	file { ['/scratch', '/scratch/hadoop']:
   		ensure => 'directory',
