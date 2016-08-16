@@ -1,0 +1,14 @@
+{
+  "name": "HEP-datanode",
+  "version": "0.1.0",
+  "author": "mnudelli",
+  "summary": "Puppet Module for a HEP Hadoop Datanode",
+  "license": "Apache 2.0",
+  "source": "https://github.com/mnudelli/HEP-datanode",
+  "project_page": "https://github.com/mnudelli/HEP-datanode",
+  "issues_url": "https://github.com/mnudelli/HEP-datanode/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
