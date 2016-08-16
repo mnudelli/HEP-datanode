@@ -1,6 +1,6 @@
 # Install class for Hadoop Datanode
 
-class install {
+class datanode::install {
 	package { 'osg-se-hadoop-datanode':
 		ensure => present,
 	}
