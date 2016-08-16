@@ -1,5 +1,5 @@
 # Hadoop Datanode Services
-class services {
+class datanode::services {
 	service { 'hadoop-hdfs-datanode' 
 		ensure => 'running',
    		enable => true,
