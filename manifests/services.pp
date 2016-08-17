@@ -5,5 +5,6 @@ class datanode::services {
    		enable => true,
    		hasstatus => true,
    		hasrestart => true,
+   		require => Package['osg-se-hadoop-datanode'],
 	}
 }
