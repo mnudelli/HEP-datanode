@@ -74,7 +74,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$hadoop_dir],
+		require => File[$datanode::hadoop_dir],
 	}
 	mount {'/hadoop2':
 		fstype => 'ext4',
