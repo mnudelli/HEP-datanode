@@ -1,7 +1,7 @@
 # Configure class for Hadoop Datanode
 
 class datanode::configure {
-	$hadoop_dir = ['/hadoop1','/hadoop2', '/hadoop3', '/hadoop4', '/hadoop5', '/hadoop6', '/hadoop7', '/hadoop8','/hadoop9','/hadoop10','/hadoop11', '/hadoop12']
+	
 	file { ['/scratch', '/scratch/hadoop']:
   		ensure => 'directory',
   		owner => 'hdfs',
