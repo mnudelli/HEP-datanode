@@ -68,4 +68,89 @@ class datanode::configure {
   		owner => 'hdfs',
   		group => 'hadoop',
 	}
+	mount {'/hadoop1':
+		fstype => 'ext4',
+		device => '/dev/sdb',
+		ensure => 'mounted',
+		options => 'defaults',
+		atboot => 'true',
+	}
+	mount {'/hadoop2':
+		fstype => 'ext4',
+		device => '/dev/sdc',
+		ensure => 'mounted',
+		options => 'defaults',
+		atboot => 'true',
+	}
+	mount {'/hadoop3':
+		fstype => 'ext4',
+		device => '/dev/sdd',
+		ensure => 'mounted',
+		options => 'defaults',
+		atboot => 'true',
+	}
+	mount {'/hadoop4':
+		fstype => 'ext4',
+		device => '/dev/sde',
+		ensure => 'mounted',
+		options => 'defaults',
+		atboot => 'true',
+	}
+	mount {'/hadoop5':
+		fstype => 'ext4',
+		device => '/dev/sdf',
+		ensure => 'mounted',
+		options => 'defaults',
+		atboot => 'true',
+	}
+	mount {'/hadoop6':
+		fstype => 'ext4',
+		device => '/dev/sdg',
+		ensure => 'mounted',
+		options => 'defaults',
+		atboot => 'true',
+	}
+	mount {'/hadoop7':
+		fstype => 'ext4',
+		device => '/dev/sdh',
+		ensure => 'mounted',
+		options => 'defaults',
+		atboot => 'true',
+	}
+	mount {'/hadoop8':
+		fstype => 'ext4',
+		device => '/dev/sdi',
+		ensure => 'mounted',
+		options => 'defaults',
+		atboot => 'true',
+	}
+	mount {'/hadoop9':
+		fstype => 'ext4',
+		device => '/dev/sdj',
+		ensure => 'mounted',
+		options => 'defaults',
+		atboot => 'true',
+	}
+	mount {'/hadoop10':
+		fstype => 'ext4',
+		device => '/dev/sdk',
+		ensure => 'mounted',
+		options => 'defaults',
+		atboot => 'true',
+	}
+	mount {'/hadoop11':
+		fstype => 'ext4',
+		device => '/dev/sdl',
+		ensure => 'mounted',
+		options => 'defaults',
+		atboot => 'true',
+	}
+	mount {'/hadoop12':
+		fstype => 'ext4',
+		device => '/dev/sdm',
+		ensure => 'mounted',
+		options => 'defaults',
+		atboot => 'true',
+	}
+	
 }
