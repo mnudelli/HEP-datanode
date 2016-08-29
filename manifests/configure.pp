@@ -74,7 +74,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$datanode::hadoop_dir],
+		require => File['/hadoop1'],
 	}
 	mount {'/hadoop2':
 		fstype => 'ext4',
@@ -82,7 +82,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$datanode::hadoop_dir],
+		require => File['/hadoop2'],
 	}
 	mount {'/hadoop3':
 		fstype => 'ext4',
@@ -90,7 +90,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$datanode::hadoop_dir],
+		require => File['/hadoop3'],
 	}
 	mount {'/hadoop4':
 		fstype => 'ext4',
@@ -98,7 +98,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$datanode::hadoop_dir],
+		require => File['/hadoop4'],
 	}
 	mount {'/hadoop5':
 		fstype => 'ext4',
@@ -106,7 +106,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$datanode::hadoop_dir],
+		require => File['/hadoop5'],
 	}
 	mount {'/hadoop6':
 		fstype => 'ext4',
@@ -114,7 +114,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$datanode::hadoop_dir],
+		require => File['/hadoop6'],
 	}
 	mount {'/hadoop7':
 		fstype => 'ext4',
@@ -122,7 +122,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$datanode::hadoop_dir],
+		require => File['/hadoop7'],
 	}
 	mount {'/hadoop8':
 		fstype => 'ext4',
@@ -130,7 +130,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$datanode::hadoop_dir],
+		require => File['/hadoop8'],
 	}
 	mount {'/hadoop9':
 		fstype => 'ext4',
@@ -138,7 +138,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$datanode::hadoop_dir],
+		require => File['/hadoop9'],
 	}
 	mount {'/hadoop10':
 		fstype => 'ext4',
@@ -146,7 +146,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$datanode::hadoop_dir],
+		require => File['/hadoop10'],
 	}
 	mount {'/hadoop11':
 		fstype => 'ext4',
@@ -154,7 +154,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$datanode::hadoop_dir],
+		require => File['/hadoop11'],
 	}
 	mount {'/hadoop12':
 		fstype => 'ext4',
@@ -162,7 +162,7 @@ class datanode::configure {
 		ensure => 'mounted',
 		options => 'defaults',
 		atboot => 'true',
-		require => File[$datanode::hadoop_dir],
+		require => File['/hadoop12'],
 	}
 	
 }
